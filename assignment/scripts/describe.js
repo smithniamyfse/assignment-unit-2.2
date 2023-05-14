@@ -141,7 +141,7 @@ let mix = true;
 
 // FIX - colorOne = 'purple'; now set to 'purple', but the instructions state both colorOne and colorTwo should be set to 'purple'.
 // Should be colorOne = colorTwo = 'purple';
-if (mix === true) {
+if (mix === true){
   colorOne = 'purple';
 }
 */
@@ -152,14 +152,14 @@ if (mix === true) {
 
 /*
 
-// FIX - time is set as a constant, const time = 4;, but the instructions state it is a variable. 
+// FIX - time is set as a constant, const time = 4; - but the instructions state it is a variable. 
 // Should be let time = 4;
 let temp = 40;
 const time = 4;
 
 // FIX - the compound conditional || means either side can be true but the instructions state and, meaning both sides need to be true. 
 // Should be if (temp > 39 && time >= 4)
-if (temp > 39 || time >= 4) {
+if (temp > 39 || time >= 4){
   console.log('throw away the food!');
 }
 */
@@ -169,10 +169,20 @@ if (temp > 39 || time >= 4) {
 // -- it is, so we console.log 'enter'.
 
 /*
+
+// FIX - minAge is set as a constant, const minAge = 21; - but the instructions state it is a variable. 
+// Should be let minAge = 21;
 let age = 21;
 const minAge = 21;
 
-if(minAge <= age) {
+// NOTE: The code below inevitably does accomplish the instructions. However, I am updating the code to reflect the description of how the code is instructed to run. 
+// FIX - minAge <= age is the reverse order as the instructions state to check if age is greater than or equal to minAge.
+// Should be if(age >= minAge) 
+// FIX - console.log('no entry'); needs to be updated to reflect the order the instructions state, 'enter'.
+// Should be console.log('enter');
+// FIX - the else chain's console.log('enter') needs to be updated to reflect the changes in the above code and the instructions.
+// Should be console.log('no entry');
+if(minAge <= age){
   console.log('no entry');
 } else {
   console.log('enter');
