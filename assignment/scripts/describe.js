@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a string variable called name and set it to Dane.
+// Then we check if name is an exact match for Mary. 
+// Since name, Dane, is not an exact match,
+// we console.log the else statement value, 'How do you do?'.
 
 //CODE
 /*
@@ -45,10 +45,10 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a variable called secret without an assigned value. We make a variable called code and set the value to 123 as a number. 
+// We check if code is an exact match to 123. 123 is an exact match to 123.
+// The value of secret is now 'super' and code is multiplied by 2 (123 * 2 = 246). Code is now 246.
+// We check to see if code is now greater than 250, since 246 is less than 250, we console.log 'super'.
 
 //CODE
 /*
@@ -70,10 +70,10 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We make a boolean variable called isStudent and set it to true. We make two number variables called age and zip. Age is set to 34 as a number and zip is set to 55407 as a number.
+// Then we check if both conditions are true. isStudent is an exact match for true but zip, 55407, is not greater than 80000.
+// Then we check if either condition if isStudent is false or if age is less than 30. Both conditions are unmet due to isStudent set to true and age is 34. 
+// Then we check if isStudent is an exact match to true, it is, and we console.log 'Welcome to Prime!'.
 
 //CODE
 /*
@@ -130,10 +130,17 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+
+// FIX - let colorOne = 'red'; is set to red, but the instructions state to set to 'blue'.
+// Should be let colorOne = 'blue';
+// FIX - let colorTwo = 'blue'; is set to blue, but the instructions state to set to 'red'.
+// Should be let colorTwo = 'red';
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - colorOne = 'purple'; now set to 'purple', but the instructions state both colorOne and colorTwo should be set to 'purple'.
+// Should be colorOne = colorTwo = 'purple';
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -144,9 +151,14 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
+
+// FIX - time is set as a constant, const time = 4;, but the instructions state it is a variable. 
+// Should be let time = 4;
 let temp = 40;
 const time = 4;
 
+// FIX - the compound conditional || means either side can be true but the instructions state and, meaning both sides need to be true. 
+// Should be if (temp > 39 && time >= 4)
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
